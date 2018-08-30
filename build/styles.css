@@ -317,6 +317,10 @@ img {
   max-width: 100%;
   height: auto; }
 
+main {
+  display: block;
+  padding-top: 2.875rem; }
+
 .hidden {
   display: none; }
 
@@ -377,4 +381,18 @@ header {
       display: block;
       margin-right: .5rem;
       font-size: 1.4rem; }
+
+.query {
+  display: flex;
+  justify-content: space-between;
+  width: 34.25rem;
+  margin: auto; }
+
+.query__input {
+  flex-basis: 82%;
+  max-width: 82%; }
+
+.query__submit {
+  width: 5.25rem;
+  padding: 0; }
 

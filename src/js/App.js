@@ -5,7 +5,7 @@ import View from "./View";
 
 export default class App {
   constructor() {
-    const storage = Storage();
+    const storage = new Storage();
     const model = new Model(storage);
     const view = new View();
     this.controller = new Controller(model, view);
