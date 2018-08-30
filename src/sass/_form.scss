@@ -1,16 +1,41 @@
+$border-radius: .812rem;
+
 .query{
   display: flex;
   justify-content: space-between;
   width: 34.25rem;
   margin: auto;
+  font-size: 14px;
 }
 
 .query__input{
   flex-basis: 82%;
-  max-width: 82%;
+  max-width: 82%; 
+  padding-left: 1rem;
+  padding-right: 1rem;
+  box-sizing: border-box;
+  border-radius: $border-radius;
+  border: 2px solid $color-query-border;
+  outline: none;
+
+  &::placeholder{
+    font-size: 10px;
+    color: $color-placeholder;
+  }
 }
 
 .query__submit{
   width: 5.25rem;
+  height: 1.625rem;
   padding: 0;
+  border-radius: $border-radius;
+  font-family: $font-cursive;
+  line-height: 1.5;
+  background-color: $color-query-button;
+  color: $color-fore-alt;
+  outline: none;
+
+  &::first-letter{
+    text-transform: uppercase;
+  }
 }

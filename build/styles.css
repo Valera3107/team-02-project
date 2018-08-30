@@ -386,13 +386,41 @@ header {
   display: flex;
   justify-content: space-between;
   width: 34.25rem;
-  margin: auto; }
+  margin: auto;
+  font-size: 14px; }
 
 .query__input {
   flex-basis: 82%;
-  max-width: 82%; }
+  max-width: 82%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  box-sizing: border-box;
+  border-radius: 0.812rem;
+  border: 2px solid #afb0b3;
+  outline: none; }
+  .query__input::-webkit-input-placeholder {
+    font-size: 10px;
+    color: #d1d3d4; }
+  .query__input:-ms-input-placeholder {
+    font-size: 10px;
+    color: #d1d3d4; }
+  .query__input::-ms-input-placeholder {
+    font-size: 10px;
+    color: #d1d3d4; }
+  .query__input::placeholder {
+    font-size: 10px;
+    color: #d1d3d4; }
 
 .query__submit {
   width: 5.25rem;
-  padding: 0; }
+  height: 1.625rem;
+  padding: 0;
+  border-radius: 0.812rem;
+  font-family: Comfortaa, cursive;
+  line-height: 1.5;
+  background-color: #cddc39;
+  color: #fff;
+  outline: none; }
+  .query__submit::first-letter {
+    text-transform: uppercase; }
 
