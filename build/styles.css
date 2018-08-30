@@ -309,6 +309,7 @@ html {
   font-size: 16px; }
 
 body {
+  padding: 2rem;
   font-family: Roboto, sans-serif; }
 
 img {
@@ -353,16 +354,27 @@ img {
 
 header {
   display: flex;
-  flex-direction: column-reverse; }
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  height: 210px; }
 
 .logo {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  align-self: center; }
 
 .menu {
   display: flex;
   justify-content: flex-end; }
-
-.menu__item--favs {
-  color: #673ab7; }
+  .menu__link {
+    text-decoration: none; }
+  .menu__link--favs {
+    display: flex;
+    align-items: center;
+    color: #673ab7; }
+    .menu__link--favs::before {
+      content: '\2605';
+      display: block;
+      margin-right: .5rem;
+      font-size: 1.4rem; }
 
