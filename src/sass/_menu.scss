@@ -1,8 +1,21 @@
 .menu{
   display: flex;
   justify-content: flex-end;
-}
 
-.menu__item--favs{
-  color: $color-main-link;
+  &__link{
+    text-decoration: none;
+  }
+
+  &__link--favs{
+    display: flex;
+    align-items: center;
+    color: $color-main-link;
+
+    &::before{
+      content: '\2605';
+      display: block;
+      margin-right: .5rem;
+      font-size: 1.4rem;
+    }
+  }
 }

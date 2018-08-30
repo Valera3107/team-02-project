@@ -1,13 +1,12 @@
 header{
   display: flex;
   flex-direction: column-reverse;
+  justify-content: space-between;
+  height: 210px;
 }
 
 .logo{
   display: flex;
   justify-content: center;
-
-  // &__img{
-  //   margin: auto;
-  // }
+  align-self: center;
 }
